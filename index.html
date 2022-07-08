@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formularios.css">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+    <form action="LinkDondeLoQueremosLlevar" method="GET">
+        <p>Nombre<input type="text" name="nombre" placeholder="Nombre" maxlength="10"></p>          <!-- Si quiero que mis casilleros queden uno abajo del otro, deberia poner una <P>
+                                                                                                    para que queden organizados como parrafo(como el ejemplo de NOMBRE). -->
+        Apellido<input type="text" name="apellido" placeholder="Apellido" maxlength="2">            <!--Sin la P, si se le escribe solo el nombre va a quedar ubicado-->        
+        Telefono<input type="text" name="telefono" placeholder="Telefono">                          <!--el nombre puesto al lado del casillero (como en apellido y telefono)-->
+        <label>
+            <p>
+                Mail                                                                                    <!--Si se desea que el titulo quede arriba y luego el casillero abajo,-->
+            </p>                                                                                        <!--se debera poner al titulo entre P's y luego el input abajo (como el ejemplo de email)-->
+            <input type="email" name="mail" placeholder="Email">                                         <!--La etiqueta LABEL es super importante porque es inclusivo con gente que no ve y luego amplia
+                                                                                                       el espacio donde podras hacer click para escribir (intenta darle clickc sobre la palabra mail y veras
+                                                                                                        como el casillero se activo para que puedas arrancar a escribir en vez de darle click SOBRE el casillero)--> 
+        </label>                                                                                                
+        Contrasena: <input type="password" placeholder="Shhhh">
+        Telefono: <input type="number" placeholder="ex:1112223339">
+        Fecha: <input type="date">
+        Archivo: <input type="file">
+                                                                                                    
+        <input type="submit" value="Aca">
+    </form>
+</body>
+</html>
