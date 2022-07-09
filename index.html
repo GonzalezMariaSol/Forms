@@ -12,7 +12,7 @@
         <p>Nombre<input type="text" name="nombre" placeholder="Nombre" maxlength="10"></p>          <!-- Si quiero que mis casilleros queden uno abajo del otro, deberia poner una <P>
                                                                                                     para que queden organizados como parrafo(como el ejemplo de NOMBRE). -->
         Apellido<input type="text" name="apellido" placeholder="Apellido" maxlength="2">            <!--Sin la P, si se le escribe solo el nombre va a quedar ubicado-->        
-        Telefono<input type="text" name="telefono" placeholder="Telefono">                          <!--el nombre puesto al lado del casillero (como en apellido y telefono)-->
+        Telefono<input type="number" name="telefono" placeholder="ex:1112223339">                          <!--el nombre puesto al lado del casillero (como en apellido y telefono)-->
         <label>
             <p>
                 Mail                                                                                    <!--Si se desea que el titulo quede arriba y luego el casillero abajo,-->
@@ -22,10 +22,13 @@
                                                                                                         como el casillero se activo para que puedas arrancar a escribir en vez de darle click SOBRE el casillero)--> 
         </label>                                                                                                
         Contrasena: <input type="password" placeholder="Shhhh">
-        Telefono: <input type="number" placeholder="ex:1112223339">
         Fecha: <input type="date">
-        Archivo: <input type="file">
-                                                                                                    
+        Archivo adjunto: <input type="file" required>                                                           <!--required sirve para que si alguien se quiere saltar ese paso, no pueda porque no lo deja avanzar hasta no completarlo-->
+        <p>Color favorito
+            <input type="radio" name="color" value="red">Rojo                                                          <!--hay que poner name y luego el mismo nombre para que te deje hacer UNA sola-->
+            <input type="radio" name="color" value="blue">Azul                                                           <!--eleccion, de otra manera sin name, te va a dejar marcar todos o mas de uno-->
+            <input type="radio" name="color" value="green">Verde                                                   <!--value en este caso funcionaria para que en el hipervinculo aparezca lo que se selecciono-->
+        </p>                                                                                                        <!--si la persona eligio el color rojo, en el link figuraria como que eligio red-->
         <input type="submit" value="Aca">
     </form>
 </body>
