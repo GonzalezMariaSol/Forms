@@ -19,16 +19,32 @@
             </p>                                                                                        <!--se debera poner al titulo entre P's y luego el input abajo (como el ejemplo de email)-->
             <input type="email" name="mail" placeholder="Email">                                         <!--La etiqueta LABEL es super importante porque es inclusivo con gente que no ve y luego amplia
                                                                                                        el espacio donde podras hacer click para escribir (intenta darle clickc sobre la palabra mail y veras
-                                                                                                        como el casillero se activo para que puedas arrancar a escribir en vez de darle click SOBRE el casillero)--> 
+                                                                                                          como el casillero se activo para que puedas arrancar a escribir en vez de darle click SOBRE el casillero)--> 
         </label>                                                                                                
         Contrasena: <input type="password" placeholder="Shhhh">
         Fecha: <input type="date">
         Archivo adjunto: <input type="file" required>                                                           <!--required sirve para que si alguien se quiere saltar ese paso, no pueda porque no lo deja avanzar hasta no completarlo-->
-        <p>Color favorito
+        <p class="colores">Color favorito
             <input type="radio" name="color" value="red">Rojo                                                          <!--hay que poner name y luego el mismo nombre para que te deje hacer UNA sola-->
             <input type="radio" name="color" value="blue">Azul                                                           <!--eleccion, de otra manera sin name, te va a dejar marcar todos o mas de uno-->
             <input type="radio" name="color" value="green">Verde                                                   <!--value en este caso funcionaria para que en el hipervinculo aparezca lo que se selecciono-->
         </p>                                                                                                        <!--si la persona eligio el color rojo, en el link figuraria como que eligio red-->
+        <p>
+            Provincias
+            <input type="checkbox" checked name="prov" value="BUE">Bs.As                                   <!--si quiero que una opcion quede marcada predeterminadamente hay que agregarle solamente la palabra-->
+            <input type="checkbox" name="prov" value="SJ">San Juan                                          <!--checked a la opcion que querramos, el usuario puede luego cambiar esa respuesta-->
+            <input type="checkbox" name="prov" value="CTM">Catamarca
+        </p>
+        Tu espacio                                                                                                    <!-- las columas y renglones se calculas POR caracter, ejemplo sol  tiene 3 columnas y un renglon -->
+        <textarea cols="50" rows="2" maxlength="50" placeholder="Describite a vos mismo"></textarea>
+        <p>
+            Paises
+            <select name="paises">
+                <option>Argentina</option>
+                <option selected="selected">United States</option>                                                  <!--el doble selected="selected" es para que se vea como primera opcion, el usuario luego puede cambiar esa opcion-->
+                <option>United Kingdom</option>
+            </select>
+        </p>
         <input type="submit" value="Aca">
     </form>
 </body>

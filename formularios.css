@@ -1,0 +1,38 @@
+input{
+    background-color: rgb(255, 179, 0);
+    border: none;
+    outline-color: rgba(166, 0, 255, 0.808);
+}
+
+input[type=text], [type=number] , [type=email]{
+    background-color: rgb(13, 154, 46);
+}
+
+input:hover{        /*donde pase el raton y siempre que sea input, cambie de color*/
+    background-color:bisque;
+}
+
+input:focus{        /*cambia de color, cuando le hayamos dado click y estemos usandolo*/
+    background-color: black;
+}
+
+input[type=text]::placeholder{           /*aca los doble puntos estan diciendo "hey a los imput que tengan tipo text*/
+    color: rgb(255, 0, 238);                     /*Y encima tengan placeholder, quiero que su place holder este en este color"*/
+}
+
+input[type=radio],[type=checkbox]{
+    margin-left: 30px;                      /*dio espacio entre cada item*/
+}
+.colores{
+    color: blueviolet;
+}
+
+textarea{                                       /*aca como no mencionamos a nadie mas que textarea cuando un usuario escriba*/
+    background-color: rgb(255, 242, 0);         /*el color este, estara cambiando el color de letra DEL USUARIO*/
+    color: rgb(0, 255, 238);
+}
+
+textarea::placeholder{
+    color: rgb(198, 24, 71);           /*aca mencionamos al placeholder por lo que ese color, va a estar cambiando*/
+                                            /*al comentario predeterminado que le hayamos puesto dentro, ej describite a vos mismo*/
+}
